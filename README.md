@@ -5,3 +5,6 @@
 
 ./kafka-topics.sh --create --topic booking-aggregate-topic-new 
 --bootstrap-server=my-cluster-kafka-bootstrap.amq-stream.svc.cluster.local:9092 
+
+
+./kafka-topics.sh  --bootstrap-server my-cluster-kafka-bootstrap.amq-stream.svc.cluster.local:9092   --alter  --topic booking-aggregate-topic  --config cleanup.policy=compact
